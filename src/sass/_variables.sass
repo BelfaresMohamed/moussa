@@ -1,0 +1,15 @@
+@import "../../node_modules/bootstrap/scss/functions"
+@import "../../node_modules/bootstrap/scss/variables"
+
+$mohamed:#9fff76f2
+$oussama:#e2e2e2
+$purple:#b300ff
+$custom-colors:("mohamed":$mohamed,"oussama":$oussama,"purple":$purple)
+$theme-colors: map-merge($theme-colors ,$custom-colors )
+
+$spacer : 20px 
+
+$custom-spacers : (10: $spacer*11 , 11:$spacer*7, 12:$spacer*6)
+
+//& Fusionner et écrire nos valeurs d'espacement :
+$spacers : map-merge($spacers , $custom-spacers )
